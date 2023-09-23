@@ -77,6 +77,16 @@ function editData() {
   /* */
   console.log('Klikni si na Edit gumb!');
 }
+
+function goHome() {
+  /* */
+  notify({
+    message: 'Klikni si na go Home gumb!',
+    position: 'bottom',
+  });
+  /* */
+  console.log('Klikni si na go Home gumb!');
+}
 </script>
 <template>
   <q-layout view="lHh Lpr lFf">
@@ -98,6 +108,7 @@ function editData() {
           aria-label="Menu"
           @click="editData"
         />
+        <q-btn flat dense round icon="home" aria-label="Menu" @click="goHome" />
 
         <q-toolbar-title> Quasar App </q-toolbar-title>
 

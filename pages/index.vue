@@ -1,4 +1,10 @@
 <script setup lang="ts">
+// linki:
+// https://github.com/cusitosr88/nuxt3-quasar-example
+
+// poglej še tole
+//https://github.com/pratik227/quasar-admin
+
 import { QBtnProps, QNotifyOptions, useQuasar } from 'quasar';
 
 const { dialog, bottomSheet, loading, loadingBar, notify, dark, screen } =
@@ -118,5 +124,7 @@ const buttons: QBtnProps[] = [
     <NuxtLink to="karte">karte</NuxtLink>
     <p></p>
     <NuxtLink to="notify">notify</NuxtLink>
+    <p></p>
+    <NuxtLink to="layout1">layout1</NuxtLink>
   </q-page>
 </template>
