@@ -114,5 +114,9 @@ const buttons: QBtnProps[] = [
     <NuxtLink to="about">O programu</NuxtLink>
     <p></p>
     <NuxtLink to="buttons">gumbi</NuxtLink>
+    <p></p>
+    <NuxtLink to="karte">karte</NuxtLink>
+    <p></p>
+    <NuxtLink to="notify">notify</NuxtLink>
   </q-page>
 </template>
