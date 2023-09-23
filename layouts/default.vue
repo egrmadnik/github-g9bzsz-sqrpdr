@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { EssentialLinkProps } from 'components/EssentialLink.vue';
+import { QNotifyOptions } from 'quasar';
+const { dialog, bottomSheet, loading, loadingBar, notify, dark, screen } =
+  useQuasar();
 
 const essentialLinks: EssentialLinkProps[] = [
   {
@@ -64,6 +67,16 @@ const leftDrawerOpen = ref(false);
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
+
+function editData() {
+  /* */
+  notify({
+    message: 'Klikni si na Edit gumb!',
+    position: 'bottom',
+  });
+  /* */
+  console.log('Klikni si na Edit gumb!');
+}
 </script>
 <template>
   <q-layout view="lHh Lpr lFf">
@@ -76,6 +89,14 @@ function toggleLeftDrawer() {
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
+        />
+        <q-btn
+          flat
+          dense
+          round
+          icon="edit"
+          aria-label="Menu"
+          @click="editData"
         />
 
         <q-toolbar-title> Quasar App </q-toolbar-title>
